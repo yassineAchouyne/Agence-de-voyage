@@ -9,6 +9,7 @@ import Offre from "./Component/Offre/Offre";
 import Fornisseur from "./Component/Fornisseur/Fornisseur";
 import Footer from "./Component/Footer/Footer";
 import Resultat from "./Component/Resultat_de_recherche/Resultat";
+import Confirmer from "./Component/Confirmer_reservation/Confirmer";
 function App() {
   const [scrol, setScrol] = useState(false);
 
@@ -37,6 +38,7 @@ function App() {
           }
         />
         <Route path="/resultat" element={<Resultat/>} />
+        <Route path="/confirm" element={<Confirmer/>} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Resultat.module.css";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 export default function Resultat() {
   return (
     <>
@@ -40,7 +41,7 @@ export default function Resultat() {
               <img className={styles.info} src="img/info.png"/>
               <div>
                 <p>prix par personne: <span>80 </span>DH</p>
-                <button>reserver</button>
+                <Link to={'/confirm'}><button>reserver</button></Link>
               </div>
             </div>
           </article>

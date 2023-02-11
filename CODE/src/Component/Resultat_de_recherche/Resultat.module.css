@@ -4,7 +4,7 @@ font-family: 'Mochiy Pop One', sans-serif;
 font-family: 'Oswald', sans-serif;
  */
  .menu{
-    background-color: #4A739A; 
+    background-color: #1d2022; 
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -69,7 +69,6 @@ h3{
     height: 25px;
     color:#707070;
     font-size: small;
-    
 }
 dir{
     height: 100%;
