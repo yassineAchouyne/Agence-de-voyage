@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import { Link } from "react-router-dom";
 import styles from "./Interface.module.css";
 export default function Interface() {
     
@@ -31,7 +32,8 @@ export default function Interface() {
 
           <input type="date"  />
 
-          <input type="submit" value="RECHERCHER" style={{color:"#fff"}}  className={styles.recherch}/>
+          <Link to={'/resultat'} ><input type="submit" value="RECHERCHER" style={{color:"#fff"}}  className={styles.recherch}/></Link>
+          
         </form>
         <h3 className={styles.soustitre}>Destinations les plus recherchées :</h3>
         <div className={styles.plusRecherch}>

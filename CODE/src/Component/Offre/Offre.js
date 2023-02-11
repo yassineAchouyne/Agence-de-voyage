@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Offre.module.css'
 export default function Offre() {
-  return (
+  return ( 
     <section>
         <div className={styles.titre}>
             <h1 >Découvrez nos offres</h1>
