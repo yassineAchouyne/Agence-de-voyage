@@ -10,6 +10,8 @@ import Fornisseur from "./Component/Fornisseur/Fornisseur";
 import Footer from "./Component/Footer/Footer";
 import Resultat from "./Component/Resultat_de_recherche/Resultat";
 import Confirmer from "./Component/Confirmer_reservation/Confirmer";
+import Paiment from "./Component/Paiment/Paiment";
+import Login from "./Component/Login/Login";
 function App() {
   const [scrol, setScrol] = useState(false);
 
@@ -39,6 +41,8 @@ function App() {
         />
         <Route path="/resultat" element={<Resultat/>} />
         <Route path="/confirm" element={<Confirmer/>} />
+        <Route path="/paiment" element={<Paiment/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
     </BrowserRouter>
   );

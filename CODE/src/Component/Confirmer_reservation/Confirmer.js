@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Confiremer.module.css";
 import Footer from '../Footer/Footer'
+import { Link } from "react-router-dom";
 export default function Confirmer() {
   return (
     <>
@@ -18,7 +19,7 @@ export default function Confirmer() {
       <br />
       <br />
 
-      <main>
+      <main className={styles.confirm}>
         <aside>
           <article>
             <h3>Détails du prix</h3>
@@ -90,7 +91,7 @@ export default function Confirmer() {
               <input type={"checkbox"} />
               J'accepte de recevoir des offres promotionnelles.
             </label>
-            <div className={styles.button}><button>Confirmer</button></div>
+            <div className={styles.button}><Link to={"/paiment"}><button>Confirmer</button></Link></div>
           </article>
         </section>
       </main>
