@@ -1,0 +1,39 @@
+/* 
+font-family: 'Arvo', serif;
+font-family: 'Mochiy Pop One', sans-serif;
+font-family: 'Oswald', sans-serif;
+ */
+.menu{
+    /* background-color: #4A739A;  */
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+}
+.menu >img{
+    width: 5rem;
+    height: 5rem;
+}
+.menu > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 13rem;
+}
+.menu >nav img{
+    width: 2rem;
+}
+.connecter{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    padding: 3px;
+}
+.connecter :hover{
+    color: #000;
+}

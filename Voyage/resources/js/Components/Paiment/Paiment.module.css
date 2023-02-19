@@ -1,0 +1,51 @@
+.paiment{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    background-color: #EFEFEF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #707070;
+}
+.header h4{
+    color: #1671D0;
+}
+.header h5{
+    color: #707070;
+}
+.art{
+    width: 55%;
+    border-radius: 10px;
+    border: 1px solid #707070;
+}
+.divReght{
+    width: 42%;
+}
+.divReght article{
+    border-radius: 10px 10px;
+    border: 1px solid #707070;
+    margin-bottom: 5px;
+}
+.paiment .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.paiment label{
+    color: #707070;
+    padding:10px 20px;
+    width: 100%;
+}
+.paiment label input{
+    border-color: #707070;
+}
+.paiment span{
+    color: #707070;
+}
