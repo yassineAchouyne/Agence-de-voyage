@@ -1,0 +1,79 @@
+/* 
+font-family: 'Arvo', serif;
+font-family: 'Mochiy Pop One', sans-serif;
+font-family: 'Oswald', sans-serif;
+ */
+.interface {
+    width: 100%;
+    height: 625px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+}
+
+.title {
+    color:  white;
+    font-family: 'Arvo', serif;
+}
+.interface>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.interface>div>form{
+    display: flex;
+    background-color: var(--blue2);
+    padding: 2px;
+    justify-content: space-between;
+}
+.interface>div>form>*{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4A739A;
+    width: 10rem;
+    
+}
+.soustitre{
+color: #4A739A;
+padding: 10px;
+}
+.plusRecherch{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.plusRecherch >a{
+    text-decoration: none;
+    background-color: var(--blue2);
+    color: var(--purple);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 12px;
+    transition: all 0.5s;
+    border: 1px solid var(--purple);
+}
+.plusRecherch >a:hover{
+    background-color: white;
+    color: var(--blue2);
+    
+}
+.recherch{
+    background-color:  var(--blue2);
+    border: #fff;
+}
+.recherch:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 805px){
+    .interface>div>form>*{
+        width: 20%;
+    }
+    
+}
