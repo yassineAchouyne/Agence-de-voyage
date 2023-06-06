@@ -1,9 +1,20 @@
 import React, { useState } from "react";
 import styles from "./Login.module.css";
+import axios from "axios";
 
 export default function Login() {
     const [connect,setConnect]=useState(true)
     const [inscrire,setInscrire]=useState(true)
+
+    const [email,setEmail] = useState('')
+    const [password,setPassword] = useState('')
+
+    const HandelLogin = (e) =>{
+      e.preventDefault();
+      axios.post('http://127.0.0.1:8000/api/login',{
+        email,password
+      })
+    }
   return (
     <div>
       <header className={styles.menu}>
@@ -23,24 +34,28 @@ export default function Login() {
             <img src={connect?"img/down-chevron.png":"img/up-arrow.png"} />
           </div>
 
-          <form className={styles.body} hidden={connect}>
+          <form className={styles.body} hidden={connect} onSubmit={HandelLogin} >
             <label className="w-100">
               Email :
               <input
                 type={"text"}
+                name="email"
                 className="form-control mt-2"
                 placeholder="Saisissez votre Email"
+                onChange={(e)=>setEmail(e.target.value)}
               />
             </label>
             <label className="w-100">
               Mot de passe :
               <input
                 type={"text"}
+                onChange={(e)=>setPassword(e.target.value)}
+                name="password"
                 className="form-control mt-2"
                 placeholder="********"
               />
             </label>
-            <button className="btn btn-primary w-100">Se connecter</button>
+            <button type="submit" className="btn btn-primary w-100">Se connecter</button>
           </form>
         </article>
 

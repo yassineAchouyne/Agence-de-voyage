@@ -22,13 +22,6 @@ export default function Interface() {
             <option value="safi">SAFI</option>
           </select>
 
-          <select>
-            <option value="1">1 Personne</option>
-            <option value="2">2 Personne</option>
-            <option value="3">3 Personne</option>
-            <option value="4">4 Personne</option>
-            <option value="5">5 Personne</option>
-          </select>
 
           <input type="date"  />
 

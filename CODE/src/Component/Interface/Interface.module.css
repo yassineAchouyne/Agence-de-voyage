@@ -27,7 +27,7 @@ font-family: 'Oswald', sans-serif;
 }
 .interface>div>form{
     display: flex;
-    background-color: var(--blue);
+    background-color: var(--blue2);
     padding: 2px;
     justify-content: space-between;
 }
@@ -53,7 +53,7 @@ padding: 10px;
 }
 .plusRecherch >a{
     text-decoration: none;
-    background-color: var(--blue);
+    background-color: var(--blue2);
     color: var(--purple);
     padding: 10px;
     border-radius: 10px;
@@ -64,11 +64,11 @@ padding: 10px;
 }
 .plusRecherch >a:hover{
     background-color: white;
-    color: var(--blue);
+    color: var(--blue2);
     
 }
 .recherch{
-    background-color:  var(--blue);
+    background-color:  var(--blue2);
     border: #fff;
 }
 .recherch:hover{

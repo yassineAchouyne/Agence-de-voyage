@@ -1,5 +1,6 @@
 import React ,{useState,useEffect}from "react";
 import styles from './NavBar.module.css'
+// import { Inertia } from "@inertiajs/inertia";
 export default function NavBar(props) {
   
   if(props.scrol)var st={backgroundColor:"#4A739A"}
